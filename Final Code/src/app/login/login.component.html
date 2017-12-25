@@ -1,0 +1,45 @@
+<div class="allcontain body-contain">
+  <hr>
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+          <h2 align="center"><b>Login</b></h2>          
+      </div>
+  </div>
+  
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">      
+          <div class="main-login main-center">       
+            <form class="form-horizontal" #form="ngForm" (ngSubmit)="onLogin(form.value)" >  
+              <div class="form-group">                
+                <div class="cols-lg-10 cols-md-10 cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" name="userName" id="userName"  placeholder="Enter your Username" ngModel  />
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group">                
+                <div class="cols-lg-10 cols-md-10 cols-sm-10">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                    <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password" ngModel />                    
+                  </div>
+                </div>
+              </div>
+             <div class="form-group" align="center">
+                <button type="submit" class="btn btn-primary btn-lg login-button regst">Login</button>
+              </div>
+              <div class="form-group">                  
+                <div class="cols-lg-10 cols-md-10 cols-sm-10">
+                  {{response.success}}
+                  <div *ngIf="errorShow" class="alert alert-danger">                    
+                  {{response.error}}
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>          
+        </div>
+      </div>
+  </div>

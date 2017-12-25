@@ -1,0 +1,37 @@
+<div class="allcontain body-contain">
+  <hr>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2 align="center"><b>All Reservations</b></h2>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>City</th>
+                  <th>Event Type</th>
+                  <th>Catering Service Required?</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let record of registrations">
+                  <td>{{record.name}}</td>
+                  <td>{{record.email}}</td>
+                  <td>{{record.phone}}</td>
+                  <td>{{record.city}}</td>
+                  <td>{{record.eventType}}</td>
+                  <td>{{record.isCateringService}}</td>
+                  <td>{{record.description}}</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+</div>

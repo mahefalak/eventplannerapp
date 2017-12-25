@@ -1,0 +1,10 @@
+.teamheight{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+hr {
+    width:100%;
+    height: 2px;
+    background-color: lightgray;
+    margin-top: 5%;
+}

@@ -1,0 +1,79 @@
+<div class="allcontain">
+	<div class="header">
+			<ul class="socialicon">
+				<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.gmail.com"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+			<ul class="givusacall">
+				<li> </li>
+			</ul>
+			<ul class="logreg pull-right">
+				<li><a routerLink="/login" routerLinkActive="active">Login </a> </li>
+				<li><a routerLink="/register" routerLinkActive="active"><span class="register">Register</span></a></li>
+			</ul>
+	</div>
+	<!-- Navbar Up -->
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
+					<span class="sr-only"> Toggle navigaion</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo" href="/home"><img src="images/logo1 (2).png" alt="logo"></a>
+			</div>	 
+		</div>
+		<div class="collapse navbar-collapse" id="upmenu">
+			<ul class="nav navbar-nav" id="navbarontop">
+				<li class="active"><a routerLink="/home" routerLinkActive="active">About Us</a> </li>
+				<li class="active"><a routerLink="/events" routerLinkActive="active">Events</a> </li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a routerLink="/birthday-parties" routerLinkActive="active">Parties</a></li>
+						<li><a routerLink="/wedding-parties" routerLinkActive="active">Weddings</a></li>
+						<li><a routerLink="/formal-parties" routerLinkActive="active">Formals</a></li>
+					</ul>
+				</li>
+				<li class="active"><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a> </li>
+				<li class="active"><a routerLink="/team"  routerLinkActive="active">Team</a> </li>				
+				<li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+				<!-- <li><a routerLink="/my-profile" routerLinkActive="active">My Profile</a></li> -->
+				<li><a routerLink="/new-request" routerLinkActive="active">Reservation</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle"	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a routerLink="/register-users" routerLinkActive="active">All Users</a></li>
+						<li><a routerLink="/event-requests" routerLinkActive="active">All Reservation</a></li>
+						<li><a routerLink="/upload-portfolio" routerLinkActive="active">Upload Portfolio</a></li>
+					</ul>
+				</li>
+				
+				
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- ________Bottom Menu ________-->
+<div class="bottommenu">
+		 <img src="images/line.png" alt="line"> <br>
+		 <div class="bottomsocial">
+		 	<a href="ttps://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.gmail.com/"><i class="fa fa-google-plus"></i></a>
+			<a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+		</div>
+			<div class="footer">
+				<div class="copyright">
+				  &copy; Copy right 2017 | <a href="#">Privacy </a>| <a href="#">Policy</a>
+				</div>
+				<div class="atisda">Designed by <a href="/team">Amna & Falak</a></div>
+		</div>
+</div>
